@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Generation cart</title>
+</head>
+<body>
+  <h1>Generation Cart</h1>
+
+  <table id="cart">
+    <thead>
+      <tr>
+        <th>Product name</th>
+        <th>Price unit</th>
+        <th>Quantity</th>
+        <th>Sub-total</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+
+
+
+
+    <tbody>
+      <tr class="product">  <!--Aquí empieza tr-->
+        <td class="name">
+          <span>Bubble-head</span>
+        </td>
+    
+        <td class="pu">
+          $<span>25.00</span>
+        </td>
+    
+        <td class="qty">
+          <label>
+            <input type="number" value="0" min="0">
+          </label>
+        </td>
+    
+        <td class="subtot">
+          $<span>0</span>
+        </td>
+    
+        <td class="rm">
+          <button class="btn btn-delete">Delete</button>
+        </td>
+      </tr>      <!--Aquí termina tr-->
+
+
+
+
+      
+      <tr class="product">  <!--Aquí empieza el tr-->
+        <td class="name">
+          <span>Playera</span>
+        </td>
+    
+        <td class="pu">
+          $<span>45.00</span>
+        </td>
+    
+        <td class="qty">
+          <label>
+            <input type="number" value="0" min="0">
+          </label>
+        </td>
+    
+        <td class="subtot">
+          $<span>0</span>
+        </td>
+    
+        <td class="rm">
+          <button class="btn btn-delete">Delete</button>
+        </td>
+      </tr>    <!--Aquí termina tr-->
+    </tbody>
+
+
+
+
+
+
+
+
+
+    <tfoot>    <!--Aquí empieza el tfoot-->
+      <tr class="new">
+        <td>
+          <input type="text" placeholder="Product Name"/>
+        </td>
+        <td>
+          <input type="number" min="0" placeholder="Product Price" />
+        </td>
+        <td></td>
+        <td></td>
+        <td>
+          <button id="create" class="btn">Create</button>
+        </td>
+      </tr>
+    </tfoot>   <!--Aquí termina el tfoot-->
+
+  </table>
+
+  <p class="cta">
+    <button id="calc" class="btn btn-success">Calculate prices</button>
+  </p>
+
+  <h2 id="total-value">Total: $<span id="total_total">0</span></h2>
+
+  <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
